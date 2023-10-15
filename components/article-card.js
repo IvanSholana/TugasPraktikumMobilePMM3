@@ -1,9 +1,9 @@
 import { View, Text, Pressable, Image, StyleSheet } from "react-native";
 
-export default function ArticleCard({ data }) {
+export default function ArticleCard({ data, choseArticle }) {
   return (
     <View style={styles.cardContainer}>
-      <Pressable style={styles.pressableContainer}>
+      <Pressable style={styles.pressableContainer} onPress={choseArticle}>
         <Image
           style={styles.imageContent}
           source={{
