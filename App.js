@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { createStackNavigator } from "@react-navigation/stack";
 import ArticleList from "./screens/article-list-screen";
 import ArticleScreens from "./screens/article-detail-screen";
@@ -8,6 +8,12 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import "react-native-gesture-handler";
 import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
 import { AntDesign } from "@expo/vector-icons";
+import ChosenArticle from "./screens/chosen-article-screen";
+import {
+  DrawerContentScrollView,
+  DrawerItemList,
+  DrawerItem,
+} from "@react-navigation/drawer";
 
 const HomeStack = createStackNavigator();
 
@@ -36,10 +42,25 @@ function HomeStackScreen() {
 
 const Drawer = createDrawerNavigator();
 
+function CustomDrawerContent({ props }) {
+  return (
+    <DrawerContentScrollView {...props}>
+      <DrawerItemList {...props} />
+      <DrawerItem
+        label="Close Drawer"
+        onPress={() => {
+          props.navigation.closeDrawer();
+        }}
+      />
+    </DrawerContentScrollView>
+  );
+}
+
 export default function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator
+        drawerContent={(props) => <CustomDrawerContent props={props} />}
         screenOptions={{
           headerStyle: { backgroundColor: "red" },
           initialRouteName: "HomeScreens",
@@ -50,6 +71,7 @@ export default function App() {
           component={HomeStackScreen}
           options={({ route }) => ({
             headerShown: getHeaderShown(route),
+            title: "Article List",
             headerRight: () => (
               <View style={styles.icon}>
                 <AntDesign name="facebook-square" size={24} color="black" />
@@ -59,6 +81,11 @@ export default function App() {
               </View>
             ),
           })}
+        />
+        <Drawer.Screen
+          name="article"
+          component={ChosenArticle}
+          options={{ title: "Article" }}
         />
       </Drawer.Navigator>
       <StatusBar style="auto" />
