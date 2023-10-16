@@ -28,4 +28,17 @@ export const ARTICLES = [
     Prestasi ini tidak hanya membanggakan bagi mahasiswa dan kampus mereka, tetapi juga bagi Indonesia secara keseluruhan. Ini adalah langkah penting dalam membuktikan bahwa anak-anak muda Indonesia memiliki bakat dan kemampuan untuk bersaing di panggung global, khususnya dalam bidang teknologi informasi yang terus berkembang. Semoga prestasi ini menjadi inspirasi bagi generasi mendatang untuk mengejar mimpi mereka dan mengejar keunggulan dalam dunia akademik dan penelitian.`,
     "https://10tph8qrsp2c6.cdn.shift8web.com/wp-content/uploads/2023/09/ISICO-2023.jpg"
   ),
+  new Article(
+    "a3",
+    "Institut Teknologi Telkom Surabaya Merayakan Malam Puncak Dies Natalis ke-5",
+    "Surabaya, Oktober 2023",
+    `Institut Teknologi Telkom Surabaya (ITTelkom Surabaya) merayakan malam puncak peringatan Dies Natalis ke-5 dengan penuh semangat dan kegembiraan. Acara spektakuler ini berlangsung di Aula Kampus ITTelkom Surabaya pada Jumat (29/09/2023), mengundang ratusan peserta yang terdiri dari mahasiswa, dosen, staf, serta tamu undangan untuk merayakan lima tahun keberhasilan dan perjalanan yang luar biasa ITTelkom Surabaya.
+    Malam puncak Dies Natalis ke-5 ITTS dimeriahkan oleh beragam acara menarik yang berkesan dengan pembukaan malam tersebut ditandai dengan penayangan video kaleidoskop yang menggambarkan perjalanan 5 tahun ITTelkom Surabaya. Dari awal berdiri hingga saat ini, video ini memicu nostalgia dan semangat untuk masa depan yang lebih gemilang.
+    Malam puncak ditandai dengan pemotongan tumpeng oleh rektor ITTelkom Surabaya, Prof. Dr. Tri Arief Sardjono, S.T. M.T, di dampingi EVP Telkom Regionl 5, Teddy Hartadi, sebagai simbol keberhasilan dan kemenangan institusi ini dalam perjalanannya selama lima tahun. Acara dilanjutkan dengan penampilan solo mahasiswa ITTelkom Surabaya. Kemudian berlanjut pemberian penghargaan kepada unit-unit, staf, program studi, dan tim konten terbaik selama satu tahun terakhir, mengapresiasi kerja keras dan kontribusi luar biasa mereka terhadap kesuksesan ITTelkom Surabaya. Penghargaan lain juga diserahkan bagi para pemenang Rector Cup yang telah berkompetisi di beberapa pekan sebelumnya.
+    Acara berlanjut ke panggung hiburan dengan penampilan DJ yang mempersembahkan lagu-lagu daerah, menciptakan suasana penuh semangat dan kegembiraan. Tidak sampai disana, ada pula penampilan tarian daerah Sulawesi.
+    Mengisi malam yang kian menanjak, sederet penampilan dari Band-band mahasiswa ITTelkom Surabaya menampilkan bakat musikal mereka yang luar biasa, menggetarkan panggung dengan musik kreatif dan energik. Dan acara di tutup oleh penampilan khusus dua bintang tamu yang ditunggu-tunggu yakni Lewong Official dan Pelin yang membawakan pertunjukan yang spektakuler, membius seluruh hadirin.
+    “Apresiasi kepada seluruh komunitas ITTelkom Surabaya yang telah berperan besar dalam mencapai pencapaian ini. Melalui perayaan satu lustrum ini juga sebagai momentum komitmen ITTelkom Surabaya sebagai pusat pendidikan tinggi yang lebih baik di masa depan.” Jelas Tri Arief Sardjono.
+    Malam puncak Dies Natalis ke-5 ITTS adalah bukti nyata semangat, kerja keras, dan dedikasi yang luar biasa dari semua pihak yang terlibat dalam perjalanan institusi ini. ITTS optimis bahwa dengan semangat yang sama, mereka akan terus mencapai prestasi yang lebih tinggi di masa depan.`,
+    "https://10tph8qrsp2c6.cdn.shift8web.com/wp-content/uploads/2023/10/Dies-Natalis.jpg"
+  ),
 ];

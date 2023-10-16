@@ -7,13 +7,16 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import "react-native-gesture-handler";
 import { getFocusedRouteNameFromRoute } from "@react-navigation/native";
+import { AntDesign } from "@expo/vector-icons";
 
 const HomeStack = createStackNavigator();
 
 function HomeStackScreen() {
   return (
     <HomeStack.Navigator
-      screenOptions={{ headerStyle: { backgroundColor: "red" } }}
+      screenOptions={{
+        headerStyle: { backgroundColor: "red" },
+      }}
     >
       <HomeStack.Screen
         name="homeScreens"
@@ -37,15 +40,25 @@ export default function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator
-        screenOptions={({ route }) => ({
-          headerShown: getHeaderShown(route),
+        screenOptions={{
           headerStyle: { backgroundColor: "red" },
-        })}
+          initialRouteName: "HomeScreens",
+        }}
       >
         <Drawer.Screen
           name="home"
           component={HomeStackScreen}
-          options={{ title: "Home Screen" }}
+          options={({ route }) => ({
+            headerShown: getHeaderShown(route),
+            headerRight: () => (
+              <View style={styles.icon}>
+                <AntDesign name="facebook-square" size={24} color="black" />
+                <AntDesign name="twitter" size={24} color="black" />
+                <AntDesign name="youtube" size={24} color="black" />
+                <AntDesign name="search1" size={24} color="black" />
+              </View>
+            ),
+          })}
         />
       </Drawer.Navigator>
       <StatusBar style="auto" />
@@ -67,5 +80,11 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  icon: {
+    flexDirection: "row",
+    width: 130,
+    marginEnd: 20,
+    justifyContent: "space-around",
   },
 });
